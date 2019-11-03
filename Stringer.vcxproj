@@ -10,6 +10,29 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractwordvalidator.cpp" />
+    <ClCompile Include="dictionary.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="note.cpp" />
+    <ClCompile Include="text.cpp" />
+    <ClCompile Include="textnotes.cpp" />
+    <ClCompile Include="word.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstractwordvalidator.h" />
+    <ClInclude Include="dictionary.h" />
+    <ClInclude Include="Exceptions.h" />
+    <ClInclude Include="note.h" />
+    <ClInclude Include="text.h" />
+    <ClInclude Include="textnotes.h" />
+    <ClInclude Include="word.h" />
+    <QtMoc Include="mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
     <Keyword>QtVS_v301</Keyword>
@@ -87,19 +110,6 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Stringer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="Stringer.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtUic Include="Stringer.ui" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="Stringer.qrc" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
     <Import Project="$(QtMsBuild)\qt.targets" />
